@@ -1,0 +1,313 @@
+main .to_up {
+
+    text-decoration: none;
+    position: fixed;
+    right:30px;
+    bottom:80px;
+    display: none;
+    cursor: pointer;
+
+}
+main .to_up.active{
+    display: block;
+    transition: all 1s;
+}
+main .to_up.active img{
+    width: 50px;
+}
+main .to_up.active img:hover{
+    width: 54px;
+}
+section.images_list {
+    background: #f0f0f0;
+}
+section.images_list div{
+    margin: 0 auto;
+    margin-top:80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+    max-width: 1180px;
+    flex-wrap:wrap;
+}
+section.images_list div img{
+
+}
+.range_slider_wrapper{
+    width: 150px;
+    height: 40px;
+    position: relative;
+}
+.range_slider_wrapper .line,.range_slider_wrapper .back_line{
+    width: 150px;
+    height: 2px;
+    background: #366cf7;
+    position: absolute;
+    top:50%;
+    left:0px;
+}
+.range_slider_wrapper .back_line{
+    background: #dcdcdc;
+    z-index: -2;
+}
+.range_slider_wrapper .line #leftHandle,.range_slider_wrapper .line #rightHandle{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #366cf7;
+    border-radius: 10px;
+    top:-6px;
+    cursor: pointer;
+    left: -15px;
+    z-index: 10;
+}
+.range_slider_wrapper .line #rightHandle{
+    left: auto;
+    right: -15px;
+}
+.range_slider_wrapper .line span{
+    position: absolute;
+    bottom:-20px;
+    font-family: Roboto-Regular;
+    font-size: 15px;
+    z-index: -2;
+}
+.range_slider_parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+}
+#search{
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    color: white;
+    background: linear-gradient(to bottom right,#376cf8,#4e92ff);
+    padding: 20px 60px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#search:active{
+    box-shadow: inset 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+#search:hover{
+    background: linear-gradient(to bottom right,#4e92ff,#376cf8)
+}
+.filter{
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 70px;
+    position: relative;
+    margin-bottom: 40px;
+    transition: all 1s;
+
+}
+.filter .flex_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    max-width: 1180px;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+.filter .wrapper_drop{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    border-bottom: 1px solid #dcdcdc;
+    margin-top: 10px;
+
+
+
+}
+.filter .wrapper_drop:nth-child(2){
+    width: 240px;
+}
+.filter .wrapper_drop div{
+    padding-bottom:10px;
+}
+.filter .drop_menu_item:hover,
+.filter .drop_menu_item_active:hover,
+.filter .drop_menu:hover,
+.filter .drop_menu_active:hover,
+.filter button.spread_search:hover
+{
+    cursor: pointer;
+    text-shadow: 1px 2px 1px gray;
+}
+.filter .drop_menu_item_active,
+.filter .drop_menu_active{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    order: 1;
+}
+.filter .drop_menu,
+.filter .drop_menu_item{
+    display: none;
+    order: 2;
+}
+.filter button.spread_search{
+    -webkit-appearance: none;
+    outline: none;
+    background:white;
+    border: none;
+
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 220px;
+    font-size: 16px;
+    font-family: "Roboto-Regular";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 15px;
+}
+aside div{
+    display: inline-block;
+    border: 1px solid #366cf7;
+    overflow: hidden;
+    border-radius: 5px;
+
+
+}
+aside div button,.number_line div button{
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Roboto-Medium";
+    letter-spacing: 2px;
+    padding:5px 20px;
+    color: #366cf7;
+    cursor: pointer;
+    background: transparent;
+}
+aside div button.active,.number_line div button.active{
+    background: #366cf7;
+    color: #f0f0f0;
+}
+.number_line{
+    background: white;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.number_line div{
+    display: inline-block;
+    margin: 0 auto;
+
+
+}
+.number_line button{
+    cursor: pointer;
+}
+.number_line div button{
+    margin: 2px;
+    padding: 5px 10px;
+    padding-right: 8px;
+    text-align: center;
+    border-radius: 5px;
+    color: #999999;
+    cursor: pointer;
+}
+.number_line div button:hover{
+    background: #8080804f;
+}
+.number_line div button.active:hover{
+    background: #366cf7;
+}
+.number_line div button.active{
+    color: white;
+}
+.number_line>button:first-child,
+.number_line>button:last-child{
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-radius: 5px;
+    /*padding: 7px 10px;*/
+    width: 30px;
+    height: 30px;
+}
+.number_line>button:first-child:hover,
+.number_line>button:last-child:hover{
+    background: #8080804f;
+}
+.number_line>button:first-child{
+    margin-right: 4px;
+}
+.number_line>button:last-child{
+    margin-left: 4px;
+}
+.number_line button img{
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px){
+    .filter .flex_wrapper{
+        padding: 30px;
+    }
+    section.images_list div{
+        justify-content: center;
+    }
+    section.images_list div img{
+        padding: 10px;
+    }
+
+}
+@media screen and (max-width: 960px){
+    .range_slider_parent{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .filter .flex_wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .filter .flex_wrapper .wrapper_drop,
+    .filter .flex_wrapper .range_slider_wrapper,
+    .filter button#search {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    .filter .flex_wrapper .wrapper_drop,
+    .filter button#search
+    {
+        width: 240px;
+    }
+    .filter .flex_wrapper .range_slider_wrapper{}
+}
+@media screen and (max-width: 600px){
+    main .to_up {
+        right: 5px;
+    }
+}
+@media screen and (max-width: 400px){
+    section.images_list div img{
+        width: 110px;
+    }
+}
+
+
+
+

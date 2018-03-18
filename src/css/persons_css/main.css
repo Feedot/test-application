@@ -1,0 +1,152 @@
+.items{
+    padding-bottom: 50px;
+    background: #f0f0f0;
+}
+.items .wrapper{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+article{
+    margin-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+article figure{
+    width: 270px;
+    margin: 0;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background: white;
+    padding-bottom: 20px;
+    box-shadow: 0 0 4px 1px #c8c8c8;
+}
+article figure div.image_wrapper{
+    width: 100%;
+    position: relative;
+    height: 270px;
+}
+article figure div.image_wrapper div{
+    position: absolute;
+    top:10px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding: 0 15px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+article figure div.image_wrapper div span{
+
+    width: 60px;
+    height: 30px;
+    background: #ff1e6c;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    font-family: Roboto-Regular;
+
+
+}
+article figure div.image_wrapper div span.active{
+    display: none;
+}
+article figure div.image_wrapper div span:first-child{
+    background: #2b333bd1;
+}
+article figure div.image_wrapper div span img{
+    margin-right: 5px;
+}
+
+article figure figcaption div{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right,#376cf8,#4e92ff);
+}
+article figure figcaption div button{
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-sizing: border-box;
+    padding: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+article figure figcaption div button img{
+    margin-right: 10px;
+}
+article figure figcaption div button:first-child{
+    border-right: 1px solid #ffffff63;
+}
+article figure figcaption p {
+    font-size: 16px;
+    font-family: Roboto-Regular;
+    margin: 0;
+    padding: 3px 20px;
+    padding-bottom: 0;
+
+}
+article figure figcaption p.name {
+    font-family: Roboto-Medium;
+    color: #366cf7;
+    font-size: 18px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+article figure figcaption p.name span.active{
+    width: 10px;
+    height:10px;
+    background: #01f501;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: 5px;
+
+}
+article p.empty{
+    width: 100%;
+    text-align: center;
+    color: #999999;
+    margin: 100px;
+}
+@media screen and (max-width: 1200px){
+    .items{
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+}
+@media screen and (max-width: 600px){
+    article{
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+/*16242b*/

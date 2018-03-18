@@ -1,0 +1,20 @@
+@import "header_css/main.css";
+@import "main_css/main.css";
+@import "persons_css/main.css";
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+body {
+    margin: 0;
+    font-family: Roboto-Regular;
+    transition: all 0.3s;
+}
+h1{
+    text-align: center;
+    margin-bottom: 70px;
+}
