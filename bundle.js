@@ -9000,7 +9000,7 @@
 	
 	
 	// module
-	exports.push([module.id, "main .to_up {\n\n    text-decoration: none;\n    position: fixed;\n    right:30px;\n    bottom:80px;\n    display: none;\n    cursor: pointer;\n\n}\nmain .to_up.active{\n    display: block;\n    transition: all 1s;\n}\nmain .to_up.active img{\n    width: 50px;\n}\nmain .to_up.active img:hover{\n    width: 54px;\n}\nsection.images_list {\n    background: #f0f0f0;\n}\nsection.images_list div{\n    margin: 0 auto;\n    margin-top:80px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    flex-direction: row;\n    padding: 20px;\n    max-width: 1180px;\n    flex-wrap:wrap;\n}\nsection.images_list div img{\n\n}\n.range_slider_wrapper{\n    width: 150px;\n    height: 40px;\n    position: relative;\n}\n.range_slider_wrapper .line,.range_slider_wrapper .back_line{\n    width: 150px;\n    height: 2px;\n    background: #366cf7;\n    position: absolute;\n    top:50%;\n    left:0px;\n}\n.range_slider_wrapper .back_line{\n    background: #dcdcdc;\n    z-index: -2;\n}\n.range_slider_wrapper .line #leftHandle,.range_slider_wrapper .line #rightHandle{\n    position: absolute;\n    width: 15px;\n    height: 15px;\n    background: #366cf7;\n    border-radius: 10px;\n    top:-6px;\n    cursor: pointer;\n    left: -15px;\n    z-index: 10;\n}\n.range_slider_wrapper .line #rightHandle{\n    left: auto;\n    right: -15px;\n}\n.range_slider_wrapper .line span{\n    position: absolute;\n    bottom:-20px;\n    font-family: \"Roboto-Regular\", sans-serif;\n    font-size: 15px;\n    z-index: -2;\n}\n.range_slider_parent{\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    width: 240px;\n}\n#search{\n    -webkit-appearance: none;\n    outline: none;\n    border: none;\n    color: white;\n    background: linear-gradient(to bottom right,#376cf8,#4e92ff);\n    padding: 20px 60px;\n    font-size: 14px;\n    letter-spacing: 2px;\n    border-radius: 10px;\n    cursor: pointer;\n}\n#search:active{\n    box-shadow: inset 0 0 10px 5px rgba(221, 221, 221, 1);\n}\n#search:hover{\n    background: linear-gradient(to bottom right,#4e92ff,#376cf8)\n}\n.filter{\n    border-bottom: 1px solid #dcdcdc;\n    padding-bottom: 70px;\n    position: relative;\n    margin-bottom: 40px;\n    transition: all 1s;\n\n}\n.filter .flex_wrapper{\n    display: flex;\n    justify-content: space-between;\n    align-items: end;\n    max-width: 1180px;\n    margin: 0 auto;\n    transition: all 0.5s;\n}\n.filter .wrapper_drop{\n    display: flex;\n    flex-direction: column;\n    width: 170px;\n    border-bottom: 1px solid #dcdcdc;\n    margin-top: 10px;\n\n\n\n}\n.filter .wrapper_drop:nth-child(2){\n    width: 240px;\n}\n.filter .wrapper_drop div{\n    padding-bottom:10px;\n}\n.filter .drop_menu_item:hover,\n.filter .drop_menu_item_active:hover,\n.filter .drop_menu:hover,\n.filter .drop_menu_active:hover,\n.filter button.spread_search:hover\n{\n    cursor: pointer;\n    text-shadow: 1px 2px 1px gray;\n}\n.filter .drop_menu_item_active,\n.filter .drop_menu_active{\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    order: 1;\n}\n.filter .drop_menu,\n.filter .drop_menu_item{\n    display: none;\n    order: 2;\n}\n.filter button.spread_search{\n    -webkit-appearance: none;\n    outline: none;\n    background:white;\n    border: none;\n\n    position: absolute;\n    bottom: -18px;\n    left: 50%;\n    transform: translate(-50%);\n    width: 220px;\n    font-size: 16px;\n    font-family: \"\"Roboto-Regular\", sans-serif\";\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding:10px 15px;\n}\naside div{\n    display: inline-block;\n    border: 1px solid #366cf7;\n    overflow: hidden;\n    border-radius: 5px;\n\n\n}\naside div button,.number_line div button{\n    -webkit-appearance: none;\n    outline: none;\n    border: none;\n\n    box-sizing: border-box;\n    font-size: 16px;\n    font-family: \"\"Roboto-Medium\", sans-serif\";\n    letter-spacing: 2px;\n    padding:5px 20px;\n    color: #366cf7;\n    cursor: pointer;\n    background: transparent;\n}\naside div button.active,.number_line div button.active{\n    background: #366cf7;\n    color: #f0f0f0;\n}\n.number_line{\n    background: white;\n    display: inline-block;\n    text-align: center;\n    padding: 5px 10px;\n    margin: 0 auto;\n    border-radius: 5px;\n}\n.number_line div{\n    display: inline-block;\n    margin: 0 auto;\n\n\n}\n.number_line button{\n    cursor: pointer;\n}\n.number_line div button{\n    margin: 2px;\n    padding: 5px 10px;\n    padding-right: 8px;\n    text-align: center;\n    border-radius: 5px;\n    color: #999999;\n    cursor: pointer;\n}\n.number_line div button:hover{\n    background: #8080804f;\n}\n.number_line div button.active:hover{\n    background: #366cf7;\n}\n.number_line div button.active{\n    color: white;\n}\n.number_line>button:first-child,\n.number_line>button:last-child{\n    -webkit-appearance: none;\n    outline: none;\n    border: none;\n    display: inline-flex;\n    justify-content: center;\n    align-items: center;\n    padding: 0px;\n    border-radius: 5px;\n    /*padding: 7px 10px;*/\n    width: 30px;\n    height: 30px;\n}\n.number_line>button:first-child:hover,\n.number_line>button:last-child:hover{\n    background: #8080804f;\n}\n.number_line>button:first-child{\n    margin-right: 4px;\n}\n.number_line>button:last-child{\n    margin-left: 4px;\n}\n.number_line button img{\n}\n\n\n\n\n\n\n\n@media screen and (max-width: 1200px){\n    .filter .flex_wrapper{\n        padding: 30px;\n    }\n    section.images_list div{\n        justify-content: center;\n    }\n    section.images_list div img{\n        padding: 10px;\n    }\n\n}\n@media screen and (max-width: 960px){\n    .range_slider_parent{\n        flex-direction: column;\n        margin: 0 auto;\n    }\n    .filter .flex_wrapper {\n        flex-direction: column;\n        justify-content: center;\n    }\n    .filter .flex_wrapper .wrapper_drop,\n    .filter .flex_wrapper .range_slider_wrapper,\n    .filter button#search {\n        margin: 0 auto;\n        margin-bottom: 50px;\n    }\n    .filter .flex_wrapper .wrapper_drop,\n    .filter button#search\n    {\n        width: 240px;\n    }\n    .filter .flex_wrapper .range_slider_wrapper{}\n}\n@media screen and (max-width: 600px){\n    main .to_up {\n        right: 5px;\n    }\n}\n@media screen and (max-width: 400px){\n    section.images_list div img{\n        width: 110px;\n    }\n}\n\n\n\n\n", ""]);
+	exports.push([module.id, "main .to_up {\n\n    text-decoration: none;\n    position: fixed;\n    right:30px;\n    bottom:80px;\n    display: none;\n    cursor: pointer;\n\n}\nmain .to_up.active{\n    display: block;\n    transition: all 1s;\n}\nmain .to_up.active img{\n    width: 50px;\n}\nmain .to_up.active img:hover{\n    width: 54px;\n}\nsection.images_list {\n    background: #f0f0f0;\n}\nsection.images_list div{\n    margin: 0 auto;\n    margin-top:80px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    flex-direction: row;\n    padding: 20px;\n    max-width: 1180px;\n    flex-wrap:wrap;\n}\nsection.images_list div img{\n\n}\n.range_slider_wrapper{\n    width: 150px;\n    height: 40px;\n    position: relative;\n}\n.range_slider_wrapper .line,.range_slider_wrapper .back_line{\n    width: 150px;\n    height: 2px;\n    background: #366cf7;\n    position: absolute;\n    top:50%;\n    left:0px;\n}\n.range_slider_wrapper .back_line{\n    background: #dcdcdc;\n    z-index: -2;\n}\n.range_slider_wrapper .line #leftHandle,.range_slider_wrapper .line #rightHandle{\n    position: absolute;\n    width: 15px;\n    height: 15px;\n    background: #366cf7;\n    border-radius: 10px;\n    top:-6px;\n    cursor: pointer;\n    left: -15px;\n    z-index: 10;\n}\n.range_slider_wrapper .line #rightHandle{\n    left: auto;\n    right: -15px;\n}\n.range_slider_wrapper .line span{\n    position: absolute;\n    bottom:-20px;\n    font-family: \"Roboto-Regular\", sans-serif;\n    font-size: 15px;\n    z-index: -2;\n}\n.range_slider_parent{\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    width: 240px;\n}\n#search{\n    -webkit-appearance: none;\n    outline: none;\n    border: none;\n    color: white;\n    background: linear-gradient(to bottom right,#376cf8,#4e92ff);\n    padding: 20px 60px;\n    font-size: 14px;\n    letter-spacing: 2px;\n    border-radius: 10px;\n    cursor: pointer;\n}\n#search:active{\n    box-shadow: inset 0 0 10px 5px rgba(221, 221, 221, 1);\n}\n#search:hover{\n    background: linear-gradient(to bottom right,#4e92ff,#376cf8)\n}\n.filter{\n    border-bottom: 1px solid #dcdcdc;\n    padding-bottom: 70px;\n    position: relative;\n    margin-bottom: 40px;\n    transition: all 1s;\n\n}\n.filter .flex_wrapper{\n    display: flex;\n    justify-content: space-between;\n    align-items: end;\n    max-width: 1180px;\n    margin: 0 auto;\n    transition: all 0.5s;\n}\n.filter .wrapper_drop{\n    display: flex;\n    flex-direction: column;\n    width: 170px;\n    border-bottom: 1px solid #dcdcdc;\n    margin-top: 10px;\n\n\n\n}\n.filter .wrapper_drop:nth-child(2){\n    width: 240px;\n}\n.filter .wrapper_drop div{\n    padding-bottom:10px;\n}\n.filter .drop_menu_item:hover,\n.filter .drop_menu_item_active:hover,\n.filter .drop_menu:hover,\n.filter .drop_menu_active:hover,\n.filter button.spread_search:hover\n{\n    cursor: pointer;\n    text-shadow: 1px 2px 1px gray;\n}\n.filter .drop_menu_item_active,\n.filter .drop_menu_active{\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    order: 1;\n}\n.filter .drop_menu,\n.filter .drop_menu_item{\n    display: none;\n    order: 2;\n}\n.filter button.spread_search{\n    -webkit-appearance: none;\n    outline: none;\n    background:white;\n    border: none;\n\n    position: absolute;\n    bottom: -18px;\n    left: 50%;\n    transform: translate(-50%);\n    width: 220px;\n    font-size: 16px;\n    font-family: \"\"Roboto-Regular\", sans-serif\";\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    padding:10px 15px;\n}\naside div{\n    display: inline-block;\n    border: 1px solid #366cf7;\n    overflow: hidden;\n    border-radius: 5px;\n\n\n}\naside div button,.number_line div button{\n    -webkit-appearance: none;\n    outline: none;\n    border: none;\n\n    box-sizing: border-box;\n    font-size: 16px;\n    font-family: \"Roboto-Medium\", sans-serif;\n    letter-spacing: 2px;\n    padding:5px 20px;\n    color: #366cf7;\n    cursor: pointer;\n    background: transparent;\n    transition: all 1s;\n}\naside div button.active,.number_line div button.active{\n    background: #366cf7;\n    color: #f0f0f0;\n}\n.number_line{\n    background: white;\n    display: inline-block;\n    text-align: center;\n    padding: 5px 10px;\n    margin: 0 auto;\n    border-radius: 5px;\n}\n.number_line div{\n    display: inline-block;\n    margin: 0 auto;\n\n\n}\n.number_line button{\n    cursor: pointer;\n}\n.number_line div button{\n    margin: 2px;\n    padding: 5px 10px;\n    padding-right: 8px;\n    text-align: center;\n    border-radius: 5px;\n    color: #999999;\n    cursor: pointer;\n}\n.number_line div button:hover{\n    background: #8080804f;\n}\n.number_line div button.active:hover{\n    background: #366cf7;\n}\n.number_line div button.active{\n    color: white;\n}\n.number_line>button:first-child,\n.number_line>button:last-child{\n    -webkit-appearance: none;\n    outline: none;\n    border: none;\n    display: inline-flex;\n    justify-content: center;\n    align-items: center;\n    padding: 0px;\n    border-radius: 5px;\n    /*padding: 7px 10px;*/\n    width: 30px;\n    height: 30px;\n}\n.number_line>button:first-child:hover,\n.number_line>button:last-child:hover{\n    background: #8080804f;\n}\n.number_line>button:first-child{\n    margin-right: 4px;\n}\n.number_line>button:last-child{\n    margin-left: 4px;\n}\n.number_line button img{\n}\n\n\n\n\n\n\n\n@media screen and (max-width: 1200px){\n    .filter .flex_wrapper{\n        padding: 30px;\n    }\n    section.images_list div{\n        justify-content: center;\n    }\n    section.images_list div img{\n        padding: 10px;\n    }\n\n}\n@media screen and (max-width: 960px){\n    .range_slider_parent{\n        flex-direction: column;\n        margin: 0 auto;\n    }\n    .filter .flex_wrapper {\n        flex-direction: column;\n        justify-content: center;\n    }\n    .filter .flex_wrapper .wrapper_drop,\n    .filter .flex_wrapper .range_slider_wrapper,\n    .filter button#search {\n        margin: 0 auto;\n        margin-bottom: 50px;\n    }\n    .filter .flex_wrapper .wrapper_drop,\n    .filter button#search\n    {\n        width: 240px;\n    }\n    .filter .flex_wrapper .range_slider_wrapper{}\n}\n@media screen and (max-width: 600px){\n    main .to_up {\n        right: 5px;\n    }\n}\n@media screen and (max-width: 400px){\n    section.images_list div img{\n        width: 110px;\n    }\n}\n@media screen and (max-width: 500px){\n    aside div button{\n        font-size: 12px;\n        padding: 5px 10px;\n    }\n}\n\n\n\n\n\n", ""]);
 	
 	// exports
 
@@ -9254,7 +9254,7 @@
 	
 	var _initApp2 = _interopRequireDefault(_initApp);
 	
-	var _data = __webpack_require__(364);
+	var _data = __webpack_require__(354);
 	
 	var _data2 = _interopRequireDefault(_data);
 	
@@ -9282,7 +9282,7 @@
 	
 	var _PersonList2 = _interopRequireDefault(_PersonList);
 	
-	var _scrollTop = __webpack_require__(363);
+	var _scrollTop = __webpack_require__(353);
 	
 	var _scrollTop2 = _interopRequireDefault(_scrollTop);
 	
@@ -9494,11 +9494,11 @@
 	
 	var _Person2 = _interopRequireDefault(_Person);
 	
-	var _Filter = __webpack_require__(358);
+	var _Filter = __webpack_require__(349);
 	
 	var _Filter2 = _interopRequireDefault(_Filter);
 	
-	var _NavBar = __webpack_require__(362);
+	var _NavBar = __webpack_require__(352);
 	
 	var _NavBar2 = _interopRequireDefault(_NavBar);
 	
@@ -9609,21 +9609,15 @@
 
 /***/ }),
 /* 348 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _loadImages = __webpack_require__(337);
-	
-	var _loadImages2 = _interopRequireDefault(_loadImages);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -9632,11 +9626,11 @@
 	        _classCallCheck(this, Person);
 	
 	        this.obj = obj;
-	        this.images = (0, _loadImages2.default)(__webpack_require__(349)), this.article = document.querySelector('article');
+	        this.article = document.querySelector('article');
 	    }
 	
 	    _createClass(Person, [{
-	        key: "build",
+	        key: 'build',
 	        value: function build() {
 	            var _obj = this.obj,
 	                id = _obj.id,
@@ -9651,7 +9645,7 @@
 	
 	
 	            var temaplate = document.createElement('figure');
-	            temaplate.innerHTML = "\n                <div class=\"image_wrapper\">\n                    <img src=\"" + images[0] + "\">\n                    <div>\n                        <span><img src=" + 'camera.png' + "> " + images.length + "</span>\n                        <span class=" + (top ? null : 'active') + " >\u0422\u041E\u041F</span>\n                    </div>\n                </div>\n                <figcaption>\n                    <div>\n                        <button class=\"add\">\n                            <img src=" + (add ? 'star_true.png' : 'star_false.png') + ">\n                            \u0418\u0437\u0431\u0440\u0430\u043D\u043D\u043E\u0435\n                        </button>\n                        <button>\n                            <img src=" + "letter.png" + ">\n                            \u041D\u0430\u043F\u0438\u0441\u0430\u0442\u044C\n                        </button>\n                    </div>\n                    <p class=\"name\">" + (name + ", " + years) + "<span class=" + (online ? 'active' : null) + "></span></p>\n                    <p>" + (city + ", " + country) + "</p>\n                </figcaption>";
+	            temaplate.innerHTML = '\n                <div class="image_wrapper">\n                    <img src="' + images[0] + '">\n                    <div>\n                        <span><img src=' + 'camera.png' + '> ' + images.length + '</span>\n                        <span class=' + (top ? null : 'active') + ' >\u0422\u041E\u041F</span>\n                    </div>\n                </div>\n                <figcaption>\n                    <div>\n                        <button class="add">\n                            <img src=' + (add ? 'star_true.png' : 'star_false.png') + '>\n                            \u0418\u0437\u0431\u0440\u0430\u043D\u043D\u043E\u0435\n                        </button>\n                        <button>\n                            <img src=' + "letter.png" + '>\n                            \u041D\u0430\u043F\u0438\u0441\u0430\u0442\u044C\n                        </button>\n                    </div>\n                    <p class="name">' + (name + ", " + years) + '<span class=' + (online ? 'active' : null) + '></span></p>\n                    <p>' + (city + ", " + country) + '</p>\n                </figcaption>';
 	
 	            top ? this.article.insertBefore(temaplate, this.article.firstChild) : this.article.appendChild(temaplate);
 	            document.querySelector('.add').onclick = function () {
@@ -9669,83 +9663,7 @@
 /* 349 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	var map = {
-		"./angel.png": 350,
-		"./anna.png": 351,
-		"./diana.png": 352,
-		"./evgeniya.png": 353,
-		"./kris.png": 354,
-		"./lara.png": 355,
-		"./nastya.png": 356,
-		"./olga.png": 357
-	};
-	function webpackContext(req) {
-		return __webpack_require__(webpackContextResolve(req));
-	};
-	function webpackContextResolve(req) {
-		return map[req] || (function() { throw new Error("Cannot find module '" + req + "'.") }());
-	};
-	webpackContext.keys = function webpackContextKeys() {
-		return Object.keys(map);
-	};
-	webpackContext.resolve = webpackContextResolve;
-	module.exports = webpackContext;
-	webpackContext.id = 349;
-
-
-/***/ }),
-/* 350 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "3cd7ff07fb89c873b2e797bc8296b548.png";
-
-/***/ }),
-/* 351 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "bacf6f686bf846420b5a5c649f30fea9.png";
-
-/***/ }),
-/* 352 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "d807ae75105bb572b5d10e6fc14301e6.png";
-
-/***/ }),
-/* 353 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "e9470e0552995e99927a60da95b89452.png";
-
-/***/ }),
-/* 354 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "218765e64cd602bdcc0f7f7d9dcc3d21.png";
-
-/***/ }),
-/* 355 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "fe81ae36763c7a704eb532282bedb5dc.png";
-
-/***/ }),
-/* 356 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "594904e14bcc25b4787c97e8c5ba7cea.png";
-
-/***/ }),
-/* 357 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "a51410a4a1cbbf12df7480e2a961075b.png";
-
-/***/ }),
-/* 358 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -9753,17 +9671,13 @@
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
-	var _RangeSlider = __webpack_require__(359);
+	var _RangeSlider = __webpack_require__(350);
 	
 	var _RangeSlider2 = _interopRequireDefault(_RangeSlider);
 	
-	var _dropMenu = __webpack_require__(360);
+	var _dropMenu = __webpack_require__(351);
 	
 	var _dropMenu2 = _interopRequireDefault(_dropMenu);
-	
-	var _down_more = __webpack_require__(361);
-	
-	var _down_more2 = _interopRequireDefault(_down_more);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -9789,7 +9703,7 @@
 	    }
 	
 	    _createClass(Filter, [{
-	        key: 'build',
+	        key: "build",
 	        value: function build() {
 	            this.createSexMenu = new _dropMenu2.default(this.objSex);
 	            this.createCityMenu = new _dropMenu2.default(this.objCity);
@@ -9798,7 +9712,7 @@
 	            this.Slider = new _RangeSlider2.default();
 	        }
 	    }, {
-	        key: 'getData',
+	        key: "getData",
 	        value: function getData() {
 	            return {
 	                sex: this.createSexMenu.active,
@@ -9814,7 +9728,7 @@
 	exports.default = Filter;
 
 /***/ }),
-/* 359 */
+/* 350 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -9949,7 +9863,7 @@
 	exports.default = RangeSlider;
 
 /***/ }),
-/* 360 */
+/* 351 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -10027,13 +9941,7 @@
 	exports.default = DropMenu;
 
 /***/ }),
-/* 361 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "bbdf3485bd16ed11201845eabac63e29.png";
-
-/***/ }),
-/* 362 */
+/* 352 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -10137,7 +10045,7 @@
 	exports.default = NavBar;
 
 /***/ }),
-/* 363 */
+/* 353 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -10163,7 +10071,7 @@
 	exports.default = scrollTop;
 
 /***/ }),
-/* 364 */
+/* 354 */
 /***/ (function(module, exports) {
 
 	"use strict";
