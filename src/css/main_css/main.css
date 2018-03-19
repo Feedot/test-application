@@ -70,7 +70,7 @@ section.images_list div img{
 .range_slider_wrapper .line span{
     position: absolute;
     bottom:-20px;
-    font-family: Roboto-Regular;
+    font-family: "Roboto-Regular", sans-serif;
     font-size: 15px;
     z-index: -2;
 }
@@ -163,7 +163,7 @@ section.images_list div img{
     transform: translate(-50%);
     width: 220px;
     font-size: 16px;
-    font-family: "Roboto-Regular";
+    font-family: ""Roboto-Regular", sans-serif";
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,12 +184,13 @@ aside div button,.number_line div button{
 
     box-sizing: border-box;
     font-size: 16px;
-    font-family: "Roboto-Medium";
+    font-family: "Roboto-Medium", sans-serif;
     letter-spacing: 2px;
     padding:5px 20px;
     color: #366cf7;
     cursor: pointer;
     background: transparent;
+    transition: all 1s;
 }
 aside div button.active,.number_line div button.active{
     background: #366cf7;
@@ -307,6 +308,13 @@ aside div button.active,.number_line div button.active{
         width: 110px;
     }
 }
+@media screen and (max-width: 500px){
+    aside div button{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
 
 
 

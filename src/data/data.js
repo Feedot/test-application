@@ -19,7 +19,7 @@ const data = [
         country: "Россия",
         images:["diana.png"],
         top:true,
-        online:true,
+        online:false,
         add:false,
         women:true
     },
@@ -55,7 +55,7 @@ const data = [
         country: "Россия",
         images:["lara.png"],
         top:false,
-        online:true,
+        online:false,
         add:false,
         women:true
     },
@@ -103,7 +103,7 @@ const data = [
         country: "Россия",
         images:["kris.png"],
         top:true,
-        online:true,
+        online:false,
         add:true,
         women:true
     },
@@ -114,7 +114,7 @@ const data = [
         city:"Самара",
         country: "Россия",
         images:["diana.png"],
-        top:true,
+        top:false,
         online:true,
         add:false,
         women:true
@@ -186,7 +186,7 @@ const data = [
         city:"Казань",
         country: "Россия",
         images:["olga.png"],
-        top:true,
+        top:false,
         online:true,
         add:false,
         women:true
@@ -199,7 +199,7 @@ const data = [
         country: "Россия",
         images:["kris.png"],
         top:true,
-        online:true,
+        online:false,
         add:true,
         women:true
     },
@@ -247,7 +247,7 @@ const data = [
         country: "Россия",
         images:["lara.png"],
         top:false,
-        online:true,
+        online:false,
         add:false,
         women:true
     },
@@ -282,8 +282,8 @@ const data = [
         city:"Казань",
         country: "Россия",
         images:["olga.png"],
-        top:true,
-        online:true,
+        top:false,
+        online:false,
         add:false,
         women:true
     },
@@ -319,7 +319,7 @@ const data = [
         country: "Россия",
         images:["anna.png"],
         top:false,
-        online:true,
+        online:false,
         add:false,
         women:true
     },
@@ -366,7 +366,7 @@ const data = [
         city:"Ростов-на-Дону",
         country: "Россия",
         images:["evgeniya.png"],
-        top:true,
+        top:false,
         online:false,
         add:false,
         women:true
@@ -486,7 +486,7 @@ const data = [
         city:"Санкт-Петербург",
         country: "Россия",
         images:["kris.png"],
-        top:true,
+        top:false,
         online:true,
         add:true,
         women:true

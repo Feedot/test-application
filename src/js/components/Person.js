@@ -1,10 +1,7 @@
-import  loadImages  from "../functions/loadImages"
-
 export default class Person {
 
     constructor(obj){
         this.obj = obj
-        this.images = loadImages (require.context("../../images/persons", false, /\.(png|jpe?g|svg)$/)),
         this.article = document.querySelector('article')
     }
 
@@ -14,20 +11,20 @@ export default class Person {
         let temaplate = document.createElement('figure')
             temaplate.innerHTML = `
                 <div class="image_wrapper">
-                    <img src="${this.images[images[0]]}">
+                    <img src="${images[0]}">
                     <div>
-                        <span><img src=${'../../images/camera.png'}> ${images.length}</span>
+                        <span><img src=${'camera.png'}> ${images.length}</span>
                         <span class=${ top ? null : 'active'} >ТОП</span>
                     </div>
                 </div>
                 <figcaption>
                     <div>
                         <button class="add">
-                            <img src=${ add ? '../../images/star_true.png':'../../images/star_false.png'}>
+                            <img src=${ add ? 'star_true.png':'star_false.png'}>
                             Избранное
                         </button>
                         <button>
-                            <img src=${"../../images/letter.png"}>
+                            <img src=${"letter.png"}>
                             Написать
                         </button>
                     </div>

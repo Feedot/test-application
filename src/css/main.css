@@ -1,20 +1,52 @@
 @import "header_css/main.css";
 @import "main_css/main.css";
 @import "persons_css/main.css";
-@font-face {
-    font-family: Roboto-Medium;
-    src: url(../fonts/Roboto-Medium.ttf);
-}
-@font-face {
-    font-family: Roboto-Regular;
-    src: url(../fonts/Roboto-Regular.ttf);
-}
+
 body {
     margin: 0;
-    font-family: Roboto-Regular;
+    font-family: "Roboto-Medium", sans-serif;
     transition: all 0.3s;
 }
 h1{
     text-align: center;
     margin-bottom: 70px;
+}
+footer {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: rgb(119, 119, 119);
+}
+footer div{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+footer ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    padding:0px;
+}
+footer ul li {
+    list-style: none;
+    margin-right: 40px;
+}
+footer ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family:"Roboto-Medium", sans-serif;
+    letter-spacing: 1px;
+    color: rgb(119, 119, 119);
+    cursor: pointer;
+}
+footer ul li a:hover{
+    color: gray;
+}
+footer p {
+    font-size: 12px;
+}
+@media screen and (max-width: 1300px){
+    footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }

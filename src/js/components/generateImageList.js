@@ -8,7 +8,7 @@ export default class GenerateImageList{
     build(){
         let { images, data } = this,
             template = document.createElement('div');
-            template.innerHTML = data.reduce( (str,item) => str += `<img src=${images[item]}>`,"");
+            template.innerHTML = data.reduce( (str,item,index) => str += `<img src=${this.data[index]}>`,"");
             return template;
     }
 }

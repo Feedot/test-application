@@ -1,5 +1,9 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const webpack = require('webpack');
+
 
 module.exports = {
   entry: [
@@ -13,7 +17,7 @@ module.exports = {
   watch:true,
   output: {
     publicPath: '/',
-    path: path.resolve(__dirname, 'src'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js'
   },
   debug: true,
@@ -32,14 +36,14 @@ module.exports = {
           test: /\.(gif|jpeg|jpg|png|svg)$/,
           loader: 'file-loader',
           options: {
-              name: 'images/[name].[ext]',
+              name: './images/[name].[ext]',
           },
       },
       {
           test: /\.(ttf|otf|eot|woff|woff2)$/,
           loader: 'file-loader',
           options: {
-              name: 'fonts/[name].[ext]',
+              name: './fonts/[path][name].[ext]',
           },
       },
 
@@ -60,7 +64,15 @@ module.exports = {
   },
   plugins: [
     // Avoid publishing files when compilation fails
-    new webpack.NoErrorsPlugin()
+  new webpack.NoErrorsPlugin(),
+  new CleanWebpackPlugin(['build']),
+  new HtmlWebpackPlugin({
+      title: 'Production',
+      template: 'src/index.html'
+  }),
+
+
+  new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
   ],
   devServer: {
     contentBase: "./src"
